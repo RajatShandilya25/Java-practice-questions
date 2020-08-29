@@ -18,20 +18,24 @@ public class TryClass
 	public static void main(String[] args) 
 	{
 		
-		//0 1 1 2 3 5 8 13
-		int n = 10;
-		int a = 0, b=1;
+		int a[] = {10, 30, 40, 30, 10, 100, 20, 0, 0, 0};
 		
-		System.out.print(a +", " +b +", ");
-
-		for(int i=2; i<n; i++)
+		HashMap<Integer, Integer> map = new HashMap<>();
+		for(int i=0; i<a.length; i++)
 		{
+			if(map.containsKey(a[i]))
+			{
+				map.put(a[i], map.get(a[i]) + 1);
+			}
+			else
+			{
+				map.put(a[i], 1);
+			}
+		}
 		
-			int sum = a + b;
-			System.out.print(sum +", ");
-			a = b;
-			b = sum;
-			
+		for(Map.Entry<Integer, Integer> it: map.entrySet()) 
+		{
+			System.out.println(it.getKey() +": " +it.getValue());
 		}
 		
 		
