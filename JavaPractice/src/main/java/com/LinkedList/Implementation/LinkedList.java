@@ -9,6 +9,10 @@ public class LinkedList
 		AddNodeAtBeginning(10);
 		AddNodeAtBeginning(15);
 		AddNodeAtBeginning(20);
+		AddNodeAtBeginning(25);
+		AddNodeAtBeginning(30);
+		AddNodeAtBeginning(35);
+		AddNodeAt(3,40);
 		LinkedListLength();
 
 		PrintLinkedList();
@@ -66,6 +70,19 @@ public class LinkedList
 	}
 	
 	
+	public static void AddNodeAt(int index, int data)
+	{
+		Node NewNode = new Node(data);
+		Node pointer = head;
+		
+		for(int i=0; i<index; i++)
+		{
+			pointer = pointer.NextNode;
+		}
+		NewNode.NextNode = pointer.NextNode;
+		pointer.NextNode = NewNode;
+
+	}
 	
 	public static void PrintLinkedList()
 	{
