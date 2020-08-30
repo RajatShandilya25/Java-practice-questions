@@ -13,6 +13,7 @@ public class LinkedList
 		AddNodeAtBeginning(30);
 		AddNodeAtBeginning(35);
 		AddNodeAt(3,40);
+		AddNodeAtEnd(45);
 		LinkedListLength();
 
 		PrintLinkedList();
@@ -52,6 +53,8 @@ public class LinkedList
 			temp = head;
 			head = NewNode;
 			head.NextNode = temp;
+			
+			
 		}
 	}
 	
@@ -84,6 +87,15 @@ public class LinkedList
 
 	}
 	
+	
+	public static void AddNodeAtEnd(int data)
+	{
+		Node NewNode = new Node(data);
+		
+		tail.NextNode = NewNode;
+		tail = NewNode;
+		
+	}
 	public static void PrintLinkedList()
 	{
 		Node pointer = head;
