@@ -9,6 +9,7 @@ public class LinkedList
 		AddNodeAtBeginning(10);
 		AddNodeAtBeginning(15);
 		AddNodeAtBeginning(20);
+		LinkedListLength();
 
 		PrintLinkedList();
 		
@@ -49,6 +50,22 @@ public class LinkedList
 			head.NextNode = temp;
 		}
 	}
+	
+	
+	public static void LinkedListLength()
+	{
+		int Length =0;
+		Node pointer = head;
+		
+		while(pointer != null)
+		{
+			Length++;
+			pointer = pointer.NextNode;
+		}
+		System.out.println("Length of linked list is: " +Length);
+	}
+	
+	
 	
 	public static void PrintLinkedList()
 	{
