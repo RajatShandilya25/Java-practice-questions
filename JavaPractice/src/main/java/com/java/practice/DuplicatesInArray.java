@@ -18,11 +18,12 @@ public class DuplicatesInArray {
 			{
 				if(a[i] == a[j])
 				{
-					System.out.println(a[i]);
+					System.out.print(a[i] +", ");
 				}
 			}
 		}
 		
+		System.out.println();
 		
 		
 		//USing HashSet
@@ -33,7 +34,7 @@ public class DuplicatesInArray {
 		{
 			if(set.add(it) == false)
 			{
-				System.out.println(it);
+				System.out.print(it +", ");
 			}
 		}
 	}
