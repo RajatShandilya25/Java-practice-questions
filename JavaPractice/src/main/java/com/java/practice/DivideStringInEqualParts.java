@@ -10,7 +10,7 @@ public class DivideStringInEqualParts {
 		int NumberOfSubstring = 3;
 		int SubstringLength = length/NumberOfSubstring;
 		
-		String SubstringArray[] = new String[SubstringLength];
+		String SubstringArray[] = new String[NumberOfSubstring];
 		int temp = 0;
 		
 		
