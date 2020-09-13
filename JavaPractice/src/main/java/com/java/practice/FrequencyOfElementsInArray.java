@@ -28,7 +28,7 @@ public class FrequencyOfElementsInArray {
 		
 		for(Map.Entry<Integer, Integer> it: map.entrySet())
 		{
-			System.out.println(it.getKey() +", " +it.getValue());
+			System.out.println(it.getKey() +" : " +it.getValue());
 		}
 		
 		
