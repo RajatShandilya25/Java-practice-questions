@@ -5,13 +5,9 @@ public class RemoveSpaceFromString {
 	public static void main(String[] args) 
 	{
 
-		String s = "aaa bbb ccc ddd";
+		String s = "aaa BBB ccc ddd";
 		
-		for(int i=0; i<s.length(); i++)
-		{
-			s = s.replaceAll(" ", "");
-		}
-		
+		s = s.replace(" ", "");
 		System.out.println(s);
 	}
 
